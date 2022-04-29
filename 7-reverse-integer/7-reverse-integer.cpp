@@ -11,7 +11,8 @@ public:
             }
 		rev=(rev*10)+r;
 		x=x/10;
-    }  
+    } 
+        
         return rev;
       }
 
