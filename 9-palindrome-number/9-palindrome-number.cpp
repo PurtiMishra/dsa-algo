@@ -2,7 +2,7 @@ class Solution {
 public:
     // 2147483647
     bool isPalindrome(int x) {
-        if( x < 0 || x >= 2147483647)
+        if( x < 0 || x >= INT_MAX)
             return false;
          long int num = 0;
         int y = x;
