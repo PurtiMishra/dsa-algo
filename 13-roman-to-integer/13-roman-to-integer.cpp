@@ -15,15 +15,18 @@ int getTranslateNum(char s) {
 public:
     int romanToInt(string s) {
         if(s.empty()) return 0;
-        int returnValue = 0;
-        for(unsigned int i=0; i<s.size()-1; i++) {
-            if(getTranslateNum(s[i]) < getTranslateNum(s[i+1])) {
-                returnValue -= getTranslateNum(s[i]);
-            } else {
-                returnValue += getTranslateNum(s[i]);
+        int returnValue =getTranslateNum(s[s.length()-1]);
+        for(int i=s.length()-2;i>=0;i--)
+        {
+            if(getTranslateNum(s[i])<getTranslateNum(s[i+1]))
+            {
+                returnValue-=getTranslateNum(s[i]);
             }
-        }
-        returnValue += getTranslateNum(s[s.size()-1]);
+            else
+            {
+                returnValue+=getTranslateNum(s[i]);
+            }
+         }
         return returnValue;
     }
 };
