@@ -5,7 +5,9 @@ public:
      {
        return 0;
       }
-      for(int i=0;i<haystack.length();i++)
+        int m=haystack.length();
+        int n= needle.length();
+      for(int i=0;i<m-n+1;i++)
       {
           if(haystack[i]==needle[0])
           {
