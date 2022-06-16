@@ -11,7 +11,7 @@ public:
       {
           if(haystack[i]==needle[0])
           {
-              for(int j=0;j<needle.length();j++)
+              for(int j=0;j<n;j++)
               {
                   if(haystack[i+j]==needle[j])
                   {
