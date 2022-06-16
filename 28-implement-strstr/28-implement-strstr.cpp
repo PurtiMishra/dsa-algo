@@ -7,7 +7,7 @@ public:
       }
         int m=haystack.length();
         int n= needle.length();
-      for(int i=0;i<m-n+1;i++)
+      for(int i=0;i<m-n+1;i++)//here we can even do m but in order to optimise the code we are doing this. Here we are checking if the length of haystack is not less than that of needle
       {
           if(haystack[i]==needle[0])
           {
