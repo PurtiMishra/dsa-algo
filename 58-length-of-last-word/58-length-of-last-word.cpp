@@ -1,4 +1,4 @@
-class Solution {
+class Solution {//this is based on string manipulation concept
 public:
     int lengthOfLastWord(string s) {
         int i,count=0;
