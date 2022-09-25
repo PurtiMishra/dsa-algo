@@ -19,12 +19,12 @@ private:
         {
             if(arr[s]!=arr[e])
             {
-                return 0;
+                return false;
             }
             s++;
             e--;
         }
-        return 1;
+        return true;
     }
 public:
     bool isPalindrome(ListNode* head) {
