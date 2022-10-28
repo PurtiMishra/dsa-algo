@@ -15,6 +15,10 @@ public:
        {
            return NULL;
        }
+        else if(head->next==NULL)
+        {
+            return head;
+        }
      ListNode *next=NULL;
      ListNode *curr=head;
      ListNode *prev=NULL;
